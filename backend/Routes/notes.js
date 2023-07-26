@@ -4,7 +4,7 @@ var fetchuser = require("../middleware/fetchuser");
 const Notes = require("../models/Notes");
 const { body, validationResult } = require("express-validator");
 
-// ROUTE:1 Fetch all notes using GET API= "http://localhost:5000/api/notes/fetchnotes" login require
+// ROUTE:1 Fetch all notes using GET API= "https://notionx-api.onrender.com/api/notes/fetchnotes" login require
 
 router.get("/fetchnotes", fetchuser, async (req, res) => {
   try {
@@ -16,7 +16,7 @@ router.get("/fetchnotes", fetchuser, async (req, res) => {
   }
 });
 
-// ROUTE:2 Add notes using POST API= "http://localhost:5000/api/notes/addnote" login require
+// ROUTE:2 Add notes using POST API= "https://notionx-api.onrender.com/api/notes/addnote" login require
 
 router.post(
   "/addnote",
@@ -53,7 +53,7 @@ router.post(
   }
 );
 
-// ROUTE:3 update existing note using PUT API= "http://localhost:5000/api/notes/updatenote" login require
+// ROUTE:3 update existing note using PUT API= "https://notionx-api.onrender.com/api/notes/updatenote" login require
 
 router.put("/updatenote/:id", fetchuser, 
 async (req, res) => {
@@ -91,7 +91,7 @@ async (req, res) => {
 });
 
 
-// ROUTE:4 Delete an  existing note using DELETE API= "http://localhost:5000/api/notes/deletenote" login require
+// ROUTE:4 Delete an  existing note using DELETE API= "https://notionx-api.onrender.com/api/notes/deletenote" login require
 
 
 router.delete("/deletenote/:id", fetchuser,

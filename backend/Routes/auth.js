@@ -8,7 +8,7 @@ const router = express.Router();
 
 const JWT_SECRET = "mehulisagoodboy";
 
-// ROUTE:1 create user using POST API= "http://localhost:5000/api/auth/createuser"  dosen't require auth
+// ROUTE:1 create user using POST API= "https://notionx-api.onrender.com/api/auth/createuser"  dosen't require auth
 router.post(
   "/createuser",
   [
@@ -58,7 +58,7 @@ router.post(
   }
 );
 
-// ROUTE:2 Authenticate a user using POST API= "http://localhost:5000/api/auth/login"
+// ROUTE:2 Authenticate a user using POST API= "https://notionx-api.onrender.com/api/auth/login"
 
 router.post(
   "/login",
@@ -106,7 +106,7 @@ router.post(
   }
 );
 
-// ROUTE:3 Get user data using POST API= "http://localhost:5000/api/auth/getuser"
+// ROUTE:3 Get user data using POST API= "https://notionx-api.onrender.com/api/auth/getuser"
 
 router.post("/getuser", fetchuser, async (req, res) => {
   try {

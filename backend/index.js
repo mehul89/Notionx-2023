@@ -19,5 +19,5 @@ app.use('/api/notes', require('./Routes/notes'))
 
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at https://notionx-api.onrender.com/`)
 })
