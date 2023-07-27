@@ -1,21 +1,19 @@
 {
   "version": 2,
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/404.html" }
+  ],
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs14.x",
       "memory": 512
     }
   },
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/" }
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
       "destination": "/api/$1"
     }
-    { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)", "destination": "/" }
   ]
 }
