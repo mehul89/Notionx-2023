@@ -26,32 +26,37 @@ export class Footer extends Component {
               </div>
               <div className="col-md-2">
                 <h6 className="text-uppercase mb-4 font-weight-bold">
-                  Products
+                  website
                 </h6>
-                {/* Use Link components instead of <a> tags */}
                 <p>
-                  <Link
-                    to="/"
-                    className={darkMode ? "text-white" : "text-black"}
+                  <a
+                    href="https://mehul89.github.io/textutils-app-React/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${darkMode ? "text-white" : "text-black"}`}
                   >
                     Textutils
-                  </Link>
+                  </a>
                 </p>
                 <p>
-                  <Link
-                    to="/"
-                    className={darkMode ? "text-white" : "text-black"}
+                  <a
+                    href="https://flashnews-letest.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${darkMode ? "text-white" : "text-black"}`}
                   >
-                    Product 2
-                  </Link>
+                    Flashnews
+                  </a>
                 </p>
                 <p>
-                  <Link
-                    to="/"
-                    className={darkMode ? "text-white" : "text-black"}
+                  <a
+                    href="https://notionx-note.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${darkMode ? "text-white" : "text-black"}`}
                   >
-                    Product 3
-                  </Link>
+                    Notionx
+                  </a>
                 </p>
               </div>
               <div className="col-md-4">
@@ -70,21 +75,38 @@ export class Footer extends Component {
                 <h6 className="text-uppercase mb-4 font-weight-bold">
                   Follow us
                 </h6>
-                <Link to="/" className="btn btn-primary btn-floating m-1">
-                  <i className="fab fa-facebook-f"></i>
-                </Link>
-                <Link to="/" className="btn btn-primary btn-floating m-1">
+                <a
+                  href="https://twitter.com/MehulChapaneri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-floating m-1"
+                >
                   <i className="fab fa-twitter"></i>
-                </Link>
-                <Link to="/" className="btn btn-primary btn-floating m-1">
+                </a>
+                <a
+                  href="https://www.instagram.com/mehul_8988/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-floating m-1"
+                >
                   <i className="fab fa-instagram"></i>
-                </Link>
-                <Link to="/" className="btn btn-primary btn-floating m-1">
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mehul-chapaneri/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-floating m-1"
+                >
                   <i className="fab fa-linkedin-in"></i>
-                </Link>
-                <Link to="/" className="btn btn-primary btn-floating m-1">
+                </a>
+                <a
+                  href="https://github.com/mehul89"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-floating m-1"
+                >
                   <i className="fab fa-github"></i>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -94,7 +116,14 @@ export class Footer extends Component {
               style={{ color: "red", fontFamily: "cursive", fontWeight: "2px" }}
             >
               {" "}
-              Mehul Chapaneri ❤
+              <a
+                href="https://hey-mehul.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Mehul Chapaneri ❤{" "}
+              </a>
             </span>
           </div>
         </footer>
